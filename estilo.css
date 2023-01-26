@@ -1,54 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-ul {
+ul{
     list-style-type: none;
 }
 
-li {
+div{
+    margin: 2em 0;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+}
+
+nav ul li{
+    margin: 1em;
+}
+
+nav ul li a{
+    font-size: 1.1em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    background-color: #F8EDE3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img{
+    border-radius: 50%;
+    border: 3px solid white;
+    max-width: 8em;
+}
+
+aside{
+    float: left;
+    margin: 1.5em 4em 1.5em 1.5em;
+    height: 100vh;
+}
+
+section{
+    margin: 2.5em 1.5em;
+}
+
+aside li{
+    margin-bottom: .7em;
+}
+
+aside h4, section h4, section h3{
+    margin: 1em 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #222222
+}
+
+/**/
+
+.titulo-lateral{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.titulo-central{
+    font-size: 1.7em;
+    font-weight: 600;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-nav ul{
-    display: flex;
-    justify-content: flex-end; 
+.lateral{
+    margin: 1em;
 }
 
-nav ul li{
-    text-decoration: none;
-    margin: 1.5em;
+.subtitulo-experiencia{
+    font-size: 1.1em;
 }
 
-aside {
-    float:left;
-    background-color: aqua;
+.tiempos{
+    font-weight: 600;
+    margin-bottom: .5em;
 }
 
-img {
-    border-radius: 50%;
-    border: 7px solid white;
-}
+/**/
 
-#principal {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: beige;
-}
-
-#principal h2{
+#nombre{
     font-size: 3em;
+    font-weight: 600;
     align-self: center;
+    margin-right: 10.5em;
 }
 
-#titulo-perfil, #titulo-experiencia {
+#contacto{
+    margin-bottom: 2em;
+}
+
+#perfil{
+    margin-bottom: 3em
+}
+
+#proyectos li{
+    margin: 1em 0;
     font-weight: 600;
 }

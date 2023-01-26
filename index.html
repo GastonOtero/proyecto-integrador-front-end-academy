@@ -10,17 +10,17 @@
 <body>
     <nav>
         <ul>
-        <li>Perfil</li>
-        <li>Experiencia laboral</li>
-        <li>Proyectos</li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Experiencia laboral</a></li>
+        <li><a href="#">Proyectos</a></li>
         </ul>
     </nav>
     <!--Datos e imagen tomados de randomuser.me-->
     <main>
-    <div id="principal">
+    <header>
         <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="foto de perfil">
-        <h2>Jeremy Holt</h2>
-    </div>
+        <h2 id="nombre">Jeremy Holt</h2>
+    </header>
     <aside id="datos-lateral">
         <div class="lateral" id="contacto">
             <h3 class="titulo-lateral">Contacto</h3>
@@ -41,19 +41,19 @@
             <p>2015-2016: Armado y reparación de pc</p>
         </div>
     </aside>
-    <section id="datos-principal">
-        <div class="principal" id="perfil">
-            <h3 id="titulo-perfil">Perfil</h3>
+    <section id="datos-central">
+        <div class="central" id="perfil">
+            <h3 class="titulo-central">Perfil</h3>
             <p> Desarrollador de software con experiencia en metodologías ágiles,  
                 liderazgo y motivación de equipos de trabajo.
                 Conocimientos en diversos lenguajes como C, Python, Javascript y librerías como React y Vue.
             </p>
         </div>
-        <div class="principal" id="experiencia">
-            <h3 id="titulo-experiencia">Experiencia laboral</h3>
+        <div class="central" id="experiencia">
+            <h3 class="titulo-central">Experiencia laboral</h3>
             <div>
                 <h4 class="subtitulo-experiencia">Accenture Argentina</h4>
-                <p>2020-Actualidad</p>
+                <p class="tiempos">2020-Actualidad</p>
                 <ul>
                     <li>Desarrollo y mantenimiento de sitios web con React</li>
                     <li>Mentoría de desarrolladores junior ingresando al proyecto</li>
@@ -61,12 +61,20 @@
             </div>
             <div>
                 <h4 class="subtitulo-experiencia">Soluciones Tecnologicas S.A.</h4>
-                <p>2016-2020</p>
+                <p class="tiempos">2016-2020</p>
                 <ul>
                     <li>Configuración y mantenimiento de redes</li>
                     <li>Soporte técnico y mesa de ayuda</li>
                 </ul>
             </div>
+        </div>
+        <div class="central" id="proyectos">
+            <h3 class="titulo-central">Proyectos</h3>
+            <ul>
+                <li><a href="#">Ecommerce con react</a></li>
+                <li><a href="#">Aplicación web para datos del clima</a></li>
+                <li><a href="#">Reproductor web de música</a></li>
+            </ul>
         </div>
     </section>
     </main>
