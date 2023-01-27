@@ -8,6 +8,10 @@
     font-size: 15px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -39,23 +43,24 @@ a{
 }
 
 header{
-    background-color: #F8EDE3;
+    background-color: #edebf8;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 img{
     border-radius: 50%;
     border: 3px solid white;
     max-width: 8em;
+    margin-left: 8em;  
 }
 
 aside{
     float: left;
     margin: 1.5em 4em 1.5em 1.5em;
-    height: 100vh;
+    min-height: 170vh;
 }
-
+    
 section{
     margin: 2.5em 1.5em;
 }
@@ -68,6 +73,14 @@ aside h4, section h4, section h3{
     margin: 1em 0;
     font-family: 'Montserrat', sans-serif;
     color: #222222
+}
+
+button {
+    padding: .4em;
+    font-size: .9em;
+    border: none;
+    border-radius: .3em;
+    background-color: #edebf8;
 }
 
 /**/
@@ -98,13 +111,17 @@ aside h4, section h4, section h3{
     margin-bottom: .5em;
 }
 
+.oculto{
+    display: none;
+}
+
 /**/
 
 #nombre{
     font-size: 3em;
     font-weight: 600;
     align-self: center;
-    margin-right: 10.5em;
+    margin-left: 3.5em;
 }
 
 #contacto{

@@ -10,9 +10,9 @@
 <body>
     <nav>
         <ul>
-        <li><a href="#">Perfil</a></li>
-        <li><a href="#">Experiencia laboral</a></li>
-        <li><a href="#">Proyectos</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#experiencia">Experiencia laboral</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
         </ul>
     </nav>
     <!--Datos e imagen tomados de randomuser.me-->
@@ -61,22 +61,48 @@
             </div>
             <div>
                 <h4 class="subtitulo-experiencia">Soluciones Tecnologicas S.A.</h4>
-                <p class="tiempos">2016-2020</p>
+                <p class="tiempos">2018-2020</p>
                 <ul>
                     <li>Configuración y mantenimiento de redes</li>
                     <li>Soporte técnico y mesa de ayuda</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="subtitulo-experiencia">Mundo PC</h4>
+                <p class="tiempos">2016-2018</p>
+                <ul>
+                    <li>Venta y asesoramiento de insumos para PC</li>
                 </ul>
             </div>
         </div>
         <div class="central" id="proyectos">
             <h3 class="titulo-central">Proyectos</h3>
             <ul>
-                <li><a href="#">Ecommerce con react</a></li>
-                <li><a href="#">Aplicación web para datos del clima</a></li>
-                <li><a href="#">Reproductor web de música</a></li>
+                <li id="eccomerce"><a href="#">Ecommerce con react</a></li>
+                <button id="boton-ecommerce">Más información</button>
+                <div id="display-ecommerce" class="oculto">
+                    <p>
+                        Frontend realizado con react y tailwind css, conecta a base de datos no realacional (Mongodb) a través de next js. 
+                    </p>
+                </div>
+                <li id="clima"><a href="#">Aplicación web para datos del clima</a></li>
+                <button id="boton-clima">Más información</button>
+                <div id="display-clima" class="oculto">
+                    <p>
+                        Sitio realizado con HTML y bootstrap, obtiene datos desde la API de weather.com
+                    </p>
+                </div>
+                <li id="musica"><a href="#">Reproductor web de música</a></li>
+                <button id="boton-musica">Más información</button>
+                <div id="display-musica" class="oculto">
+                    <p>
+                        Reproductor web responsive diseñado con HTML y CSS, programado con javascript sin frameworks.
+                    </p>
+                </div>
             </ul>
         </div>
     </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
